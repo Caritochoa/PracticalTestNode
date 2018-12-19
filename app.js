@@ -18,13 +18,45 @@ module.exports = {
     response.writeHead(200, { "Content-Type": "text/html" });
 
     var path = url.parse(request.url).pathname;
+
     switch (path) {
       case "/":
         renderHTML("./index.html", response);
         break;
-      case "/login":
-        renderHTML("./login.html", response);
+
+      case "/p0":
+        renderHTML("./p0.html", response);
         break;
+
+      case "/p1":
+        renderHTML("./p1.html", response);
+        break;
+
+      case "/p2":
+        renderHTML("./p2.html", response);
+        break;
+      case "/p3":
+        renderHTML("./p3.html", response);
+        break;
+      case "/p4":
+        renderHTML("./p4.html", response);
+        break;
+      case "p5":
+        renderHTML("./p5.html", response);
+        break;
+      case "/p6":
+        renderHTML("./p6.html", response);
+        break;
+      case "/p7":
+        renderHTML("./p7.html", response);
+        break;
+      case "/p8":
+        renderHTML("./p8.html", response);
+        break;
+      case "/p9":
+        renderHTML("./p9.html", response);
+        break;
+
       default:
         response.writeHead(404);
         response.write("Route not Defined");
