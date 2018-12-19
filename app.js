@@ -1,3 +1,5 @@
+var module1 = require("./module1"); //modulo donde estan las promesas
+
 var url = require("url");
 var fs = require("fs");
 
